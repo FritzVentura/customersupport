@@ -5,10 +5,9 @@
   "main": "index.js",
   "scripts": {
     "my-sass": "node-sass source/css/style.scss build/css/style.css",
-    "concat-css": "cat source/css/*.css build/css/style.css > build/css/all.css",
-    "autoprefix": "postcss build/css/all.css --use autoprefixer -d build/css/",
-    "minifycss": "postcss build/css/all.css --use cssnano -d build/css/minify",
-    "allcss": "npm run my-sass && npm run concat-css && npm run autoprefix && npm run minifycss",
+    "autoprefix": "postcss build/css/style.css --use autoprefixer -d build/css/",
+    "minifycss": "postcss build/css/style.css --use cssnano -d build/css/minify",
+    "allcss": "npm run my-sass && npm run autoprefix && npm run minifycss",
     "watch": "watch \"npm run allcss\" source/"
   },
   "repository": {

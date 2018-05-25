@@ -1,7 +1,8 @@
-// normal function --> hvor filnavnet for svg'en og modtagerelementet er defineret som parameters
+
+
 function jsonLoaded(svgPath,element,callBack){
 
-    // fetch og load SVG'en til DOM'en
+    // fetch og load json til DOM'en
     fetch(svgPath)
         .then(function(response){
             return response.json();
