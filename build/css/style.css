@@ -1,2 +1,55 @@
+html {
+  background: #ebebeb;
+  margin: 0; }
 
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzdHlsZS5jc3MifQ== */
+.textbox {
+  background: #a53838;
+  color: white;
+  padding: 20px;
+  border: 1px solid  black; }
+  .textbox h1 {
+    font-family: Arial, sans-serif;
+    font-size: 1.6em; }
+  .textbox h2 {
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+    color: grey; }
+
+a {
+  text-decoration: none;
+  text-decoration-line: none; }
+
+.full {
+  display: none; }
+
+.butt {
+  border-style: none;
+  background: #01d1E5;
+  width: 200px;
+  height: 50px;
+  border-radius: 10%;
+  font-family: Arial, sans-serif;
+  cursor: pointer; }
+
+#date {
+  display: flex;
+  justify-content: center;
+  align-content: space-between; }
+  #date h2 {
+    font-family: Arial, sans-serif; }
+
+.i1 {
+  background: #d11d05; }
+
+.i2 {
+  background: #fa7a55; }
+
+.i3 {
+  background: #fb1; }
+
+.i4 {
+  background: #bada55; }
+
+@media only screen and (min-width: 72em) {
+  body {
+    margin: 0 auto; } }

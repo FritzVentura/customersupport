@@ -12,41 +12,55 @@ async function getJson(){
     let jsonObject = await fetch("https://kea-alt-del.dk/customersupport/?count=10"); 
     let events = await jsonObject.json();
     
-/*   events.sort(function (a, b) {
-      return a.first.localeCompare(b.first);
-    }); */
+    /*   events.sort(function (a, b) {
+        return a.first.localeCompare(b.first);
+        }); */
     
     events.forEach(function(event){
         
     // klon template og vis i DOM
     let klon = template.cloneNode(true).content;
-    let clicked;
         
     klon.querySelector(".first").textContent = event.first;
     klon.querySelector(".last").textContent = event.last;
     klon.querySelector(".message").textContent = event.message;
-
     klon.querySelector(".full").textContent = event.full;
+    klon.querySelector(".year").textContent = event.time.year;
+    klon.querySelector(".month").textContent = event.time.month;
+    klon.querySelector(".day").textContent = event.time.day;
   
 
-    let btn1 = document.querySelector("button");
+    if (event.importance < 25){
+        klon.querySelector(".textbox").style.background = "#fb1";
+    } else if (event.importance < 50 ){
+        klon.querySelector(".textbox").style.background = "#bada55";
+    } else if (event.importance < 75 ){
+        klon.querySelector(".textbox").style.background = "#fa7a55";
+    } else {
+        klon.querySelector(".textbox").style.background = "#d11d05";
+    } 
 
-    btn1.addEventListener("click", function loadText(){
-    klon.querySelector(".full").style.display = "inherit";
+
+    let btn1 = klon.querySelector(".butt");
+
+    btn1.addEventListener("click", function(event){
+        
+        // find target
+        let clicked = event.target;
+        console.log("dubbi",clicked);
+
+        // find targets prevoius sibling = full
+        let targetClick = clicked.previousSibling.previousSibling;
+        console.log("HANSEN",targetClick);
+
+
+        document.querySelector(".full").style.display = "inherit"; 
+
     });
     
 
  eventscontainer.appendChild(klon);
-    });
 
-    if (event.importance < 25){
-        klon.querySelector(".textbox").style.background = yellow;
-    } else if (event.importance < 50 ){
-        klon.querySelector(".textbox").style.background = green;
-    } else if (event.importance < 75 ){
-        klon.querySelector(".textbox").style.background = orange;
-    } else {
-        klon.querySelector(".textbox").style.background = red;
-    }
+    });
 
 }
