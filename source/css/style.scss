@@ -1,3 +1,42 @@
-html {
+$myFont: Arial, sans-serif;
+$myColor: rgb(165, 56, 56);
+$bgColor: #ebebeb;
+$width: 100%;
+$value: 10px;
 
+html {
+background: $bgColor;
+margin: 0;
+}
+
+#template_modtager {
+
+};
+
+
+.textbox {
+background:$myColor;
+color: white;
+padding: 20px;
+      h1 {
+        font-size: 1.6em;
+        text-decoration: none;
+text-decoration-line: none;
+      }
+}
+
+.message {
+
+}
+
+#date {
+  display: flex;
+  justify-content: center;
+  align-content: space-between;
+}
+
+@media only screen and (min-width: 72em) {
+  body {
+    margin: 0 auto;
+  }
 }
