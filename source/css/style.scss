@@ -21,11 +21,12 @@ padding: 20px;
 border: 1px solid  black;
 h1{
   font-family: $myFont;
-  font-size: 1.6em;
+  font-size: 1.2em;
+  color: grey;
 }
 h2{
   font-family: $myFont;
-  font-size: 1em;
+  font-size: 1.2em;
   color: grey;
 }
 }
@@ -35,8 +36,16 @@ a {
   text-decoration-line: none;
 }
 
-.message {
+.first{
+  color: #fff;
+}
 
+.last{
+  color: #fff;
+}
+
+.message {
+  color: #fff;
 }
 
 .full{
@@ -45,13 +54,20 @@ a {
 
 .butt{
   border-style: none;
-  background: #01d1E5;
+  background: rgb(49, 49, 49);
   width: 200px;
   height: 50px;
   border-radius: 10%;
+  color: #fff;
   font-family: $myFont;
   cursor: pointer;
+  &:hover{
+    background: white;
+    transition: .8s;
+    color: rgb(49, 49, 49);
+  }
 }
+
 
 #date {
   display: flex;
@@ -64,18 +80,26 @@ a {
 
 .i1{
   background: #d11d05;
+  font-family: $myFont;
+  text-align: center;
 }
 
 .i2{
   background: #fa7a55;
+  font-family: $myFont;
+  text-align: center;
 }
 
 .i3{
   background: #fb1;
+  font-family: $myFont;
+  text-align: center;
 }
 
 .i4{
   background: #bada55;
+  font-family: $myFont;
+  text-align: center;
 }
 
 @media only screen and (min-width: 72em) {

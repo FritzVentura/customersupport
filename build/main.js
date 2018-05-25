@@ -47,14 +47,14 @@ async function getJson(){
         
         // find target
         let clicked = event.target;
-        console.log("dubbi",clicked);
+        console.log("event target",clicked);
 
         // find targets prevoius sibling = full
         let targetClick = clicked.previousSibling.previousSibling;
-        console.log("HANSEN",targetClick);
+        console.log("Previous Sibling",targetClick);
 
 
-        document.querySelector(".full").style.display = "inherit"; 
+        targetClick.style.display = "inherit"; 
 
     });
     

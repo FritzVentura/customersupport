@@ -9,27 +9,42 @@ html {
   border: 1px solid  black; }
   .textbox h1 {
     font-family: Arial, sans-serif;
-    font-size: 1.6em; }
+    font-size: 1.2em;
+    color: grey; }
   .textbox h2 {
     font-family: Arial, sans-serif;
-    font-size: 1em;
+    font-size: 1.2em;
     color: grey; }
 
 a {
   text-decoration: none;
   text-decoration-line: none; }
 
+.first {
+  color: #fff; }
+
+.last {
+  color: #fff; }
+
+.message {
+  color: #fff; }
+
 .full {
   display: none; }
 
 .butt {
   border-style: none;
-  background: #01d1E5;
+  background: #313131;
   width: 200px;
   height: 50px;
   border-radius: 10%;
+  color: #fff;
   font-family: Arial, sans-serif;
   cursor: pointer; }
+  .butt:hover {
+    background: white;
+    transition: .8s;
+    color: #313131; }
 
 #date {
   display: flex;
@@ -39,16 +54,24 @@ a {
     font-family: Arial, sans-serif; }
 
 .i1 {
-  background: #d11d05; }
+  background: #d11d05;
+  font-family: Arial, sans-serif;
+  text-align: center; }
 
 .i2 {
-  background: #fa7a55; }
+  background: #fa7a55;
+  font-family: Arial, sans-serif;
+  text-align: center; }
 
 .i3 {
-  background: #fb1; }
+  background: #fb1;
+  font-family: Arial, sans-serif;
+  text-align: center; }
 
 .i4 {
-  background: #bada55; }
+  background: #bada55;
+  font-family: Arial, sans-serif;
+  text-align: center; }
 
 @media only screen and (min-width: 72em) {
   body {
