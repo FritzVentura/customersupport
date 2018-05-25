@@ -12,7 +12,7 @@ The endpoint provides one additional parameter you can work with if you like
 | count=10 | sets the amount of returned support requests |
 
 All requests are generated randomly each time data is fetched
-
+ 
 ## Example
 https://kea-alt-del.dk/customersupport/?count=10
 
