@@ -40,3 +40,5 @@ The following tasks are "required", meaning you should complete them unless you 
 
 #### Final notes
 Hand in your solution on fronter before Monday
+
+

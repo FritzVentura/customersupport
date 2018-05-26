@@ -15,10 +15,20 @@ html {
     font-family: Arial, sans-serif;
     font-size: 1.2em;
     color: grey; }
+  .textbox .full {
+    color: #cecccc; }
 
+/* 
 a {
   text-decoration: none;
-  text-decoration-line: none; }
+  text-decoration-line: none;
+} */
+#date {
+  display: flex;
+  justify-content: center;
+  align-content: space-between; }
+  #date h2 {
+    font-family: Arial, sans-serif; }
 
 .first {
   color: #fff; }
@@ -32,7 +42,6 @@ a {
 .full {
   background: #3b3b3b;
   display: none;
-  color: #fff;
   padding: 20px; }
 
 .butt {
@@ -49,12 +58,52 @@ a {
     transition: .8s;
     color: #313131; }
 
-#date {
-  display: flex;
-  justify-content: center;
-  align-content: space-between; }
-  #date h2 {
-    font-family: Arial, sans-serif; }
+.butt2 {
+  border-style: none;
+  background: #313131;
+  width: 200px;
+  height: 50px;
+  border-radius: 100px;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+  transition: 1s; }
+  .butt2:hover {
+    background: white;
+    transition: .8s;
+    color: #313131; }
+
+.boxIn {
+  animation-name: box_anim;
+  animation-duration: 1.4s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  display: inherit; }
+
+@keyframes box_anim {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.boxOut {
+  animation-name: check_anim;
+  animation-duration: 1.3s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards; }
+
+@keyframes check_anim {
+  0% {
+    background: #414141;
+    margin-left: 0%;
+    opacity: 1; }
+  100% {
+    background: #414141;
+    margin-left: 50%;
+    display: none;
+    opacity: 0.3; } }
 
 .i1 {
   background: #d11d05;
@@ -73,6 +122,11 @@ a {
 
 .i4 {
   background: #bada55;
+  font-family: Arial, sans-serif;
+  text-align: center; }
+
+.i5 {
+  background: #a7a7a7;
   font-family: Arial, sans-serif;
   text-align: center; }
 

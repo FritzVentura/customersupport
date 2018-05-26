@@ -1,3 +1,4 @@
+// VARIABLER
 $myFont: Arial, sans-serif;
 $myColor: rgb(165, 56, 56);
 $bgColor: #ebebeb;
@@ -6,14 +7,14 @@ $value: 10px;
 
 html {
 background: $bgColor;
-margin: 0;
+margin: 0; 
 }
 
 #template_modtager {
 
 };
 
-
+// TASK BOX
 .textbox {
 background:$myColor;
 color: white;
@@ -29,32 +30,50 @@ h2{
   font-size: 1.2em;
   color: grey;
 }
+.full{
+  color: rgb(206, 204, 204);
 }
+};
 
+/* 
 a {
   text-decoration: none;
   text-decoration-line: none;
+} */
+
+//DATE
+#date {
+  display: flex;
+  justify-content: center;
+  align-content: space-between;
+  h2{
+    font-family: Arial, sans-serif;
+  }
 }
 
+// FIRSTNAME
 .first{
   color: #fff;
 }
 
+// LASTNAME
 .last{
   color: #fff;
 }
 
+// MESSAGE
 .message {
   color: #fff;
 }
 
+// TEXT
 .full{
   background: rgb(59, 59, 59);
   display: none;
-  color: #fff;
   padding: 20px;
 }
 
+// KNAP 1
 .butt{
   border-style: none;
   background: rgb(49, 49, 49);
@@ -72,39 +91,106 @@ a {
 }
 
 
-#date {
-  display: flex;
-  justify-content: center;
-  align-content: space-between;
-  h2{
-    font-family: Arial, sans-serif;
+// KNAP 2
+.butt2{
+  border-style: none;
+  background: rgb(49, 49, 49);
+  width: 200px;
+  height: 50px;
+  border-radius: 100px;
+  color: #fff;
+  font-family: $myFont;
+  cursor: pointer;
+  &:hover{
+    background: white;
+    transition: .8s;
+    color: rgb(49, 49, 49);
+  }
+  transition: 1s;
+}
+
+// TEXTBOX ANIMATION
+.boxIn {
+  animation-name: box_anim;
+  animation-duration: 1.4s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  display: inherit;
+}
+
+@keyframes box_anim {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
+// ANIMATION BOX UD
+.boxOut {
+    animation-name: check_anim;
+    animation-duration: 1.3s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes check_anim {
+    0% {
+      background: rgb(65, 65, 65);
+      margin-left: 0%;
+      opacity: 1;
+    }
+    100% {
+      background: rgb(65, 65, 65);
+      margin-left: 50%;
+      display: none;
+      opacity: 0.3;
+    }
+}
+
+
+// TASK IMPORTANCE 1
 .i1{
   background: #d11d05;
   font-family: $myFont;
   text-align: center;
 }
 
+// TASK DESCRIPTION 2
 .i2{
   background: #fa7a55;
   font-family: $myFont;
   text-align: center;
 }
 
+// TASK DESCRIPTION 3
 .i3{
   background: #fb1;
   font-family: $myFont;
   text-align: center;
 }
 
+// TASK DESCRIPTION 4
 .i4{
   background: #bada55;
   font-family: $myFont;
   text-align: center;
 }
 
+// TASK DESCRIPTION 5
+.i5{
+  background: rgb(167, 167, 167);
+  font-family: $myFont;
+  text-align: center;
+}
+
+
+
+
+// MEDIA QUERIES DESKTOP
 @media only screen and (min-width: 72em) {
   body {
     margin: 0 auto;
