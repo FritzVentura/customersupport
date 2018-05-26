@@ -30,14 +30,17 @@ a {
   color: #fff; }
 
 .full {
-  display: none; }
+  background: #3b3b3b;
+  display: none;
+  color: #fff;
+  padding: 20px; }
 
 .butt {
   border-style: none;
   background: #313131;
   width: 200px;
   height: 50px;
-  border-radius: 10%;
+  border-radius: 100px;
   color: #fff;
   font-family: Arial, sans-serif;
   cursor: pointer; }
