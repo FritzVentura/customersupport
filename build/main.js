@@ -89,7 +89,7 @@ async function getJson(){
 
         
 
-        setTimeout(function(){ alert("Task is signed, sealed and delivered"); }, 500);
+        setTimeout(function(){ alert("Task is signed, sealed and delivered"); }, 1000);
 
     });
     
