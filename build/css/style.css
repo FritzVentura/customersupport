@@ -10,11 +10,11 @@ html {
   .textbox h1 {
     font-family: Arial, sans-serif;
     font-size: 1.2em;
-    color: grey; }
+    color: black; }
   .textbox h2 {
     font-family: Arial, sans-serif;
     font-size: 1.2em;
-    color: grey; }
+    color: black; }
   .textbox .full {
     color: #cecccc; }
 
@@ -26,18 +26,30 @@ a {
 #date {
   display: flex;
   justify-content: center;
-  align-content: space-between; }
+  align-content: space-between;
+  background: white; }
   #date h2 {
     font-family: Arial, sans-serif; }
 
+.mbg1 {
+  display: flex;
+  justify-content: center; }
+
+.mbg2 {
+  background: white;
+  padding: 20px; }
+
 .first {
-  color: #fff; }
+  color: black;
+  font-weight: bolder; }
 
 .last {
-  color: #fff; }
+  color: black;
+  font-weight: bolder; }
 
 .message {
-  color: #fff; }
+  color: black;
+  font-weight: 200; }
 
 .full {
   background: #3b3b3b;
@@ -48,10 +60,12 @@ a {
   border-style: none;
   background: #313131;
   width: 200px;
-  height: 50px;
-  border-radius: 100px;
+  height: 40px;
+  border-radius: 5px;
   color: #fff;
   font-family: Arial, sans-serif;
+  margin-top: 10px;
+  margin-bottom: 10px;
   cursor: pointer; }
   .butt:hover {
     background: white;
@@ -62,8 +76,8 @@ a {
   border-style: none;
   background: #313131;
   width: 200px;
-  height: 50px;
-  border-radius: 100px;
+  height: 40px;
+  border-radius: 5px;
   color: #fff;
   font-family: Arial, sans-serif;
   cursor: pointer;
@@ -101,7 +115,6 @@ a {
     opacity: 1; }
   100% {
     background: #414141;
-    margin-left: 50%;
     display: none;
     opacity: 0.3; } }
 

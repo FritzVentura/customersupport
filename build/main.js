@@ -58,14 +58,17 @@ async function getJson(){
 
         targetClick.classList.add("boxIn");
 
+
     });
 
 
-// KNAP 1
+// KNAP 2
     let btn2 = klon.querySelector(".butt2");
 
     btn2.addEventListener("click", function(event){
         
+     let dubbi = document.querySelector(".full");
+     console.log(dubbi)
         // find target
         let clicked2 = event.target;
         console.log("Butt2 er clicked - event target",clicked2);
@@ -83,9 +86,10 @@ async function getJson(){
 
         targetClick2.classList.add("boxOut");
         event.target.style.display = "none";
+
         
 
-        setTimeout(function(){ alert("Task is signed, sealed and delivered"); }, 1800);
+        setTimeout(function(){ alert("Task is signed, sealed and delivered"); }, 500);
 
     });
     
